@@ -1,16 +1,11 @@
-import React, { Component } from 'react';
-import "./style.css"
+import React from 'react'
 
-export default class Box extends Component {
-  render() {
-    return (
-      
-        <div class="color">
-          <h2>Your BMI= {this.state.val}</h2>
-                <h2>{this.state.BMI}</h2>
-        </div>
-      
-    )
-  }
+export default function box(props) {
+  return (
+    <div>
+      <h2>{props.BMI}</h2>
+      <h4>{props.msg}</h4>
+    </div>
+  )
 }
 
